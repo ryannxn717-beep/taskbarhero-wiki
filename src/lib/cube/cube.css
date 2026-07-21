@@ -1,0 +1,973 @@
+.cube-page {
+  width: 100%;
+  max-width: 980px;
+  padding: 32px 30px 46px;
+  margin: 0 auto;
+  color: var(--text);
+}
+
+.cube-page h1,
+.cube-page h2,
+.cube-page h3,
+.cube-page p {
+  margin-top: 0;
+}
+
+.cube-page h1 {
+  margin-bottom: 8px;
+  font-family: var(--display-font);
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.cube-page h2 {
+  margin: 34px 0 8px;
+  font-family: var(--display-font);
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.cube-page h3 {
+  font-size: 15px;
+}
+
+.cube-page p,
+.cube-section-copy {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.cube-copy-head > p {
+  max-width: 780px;
+  color: #cfc6b2;
+  font-weight: 700;
+}
+
+.cube-operation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.cube-operation-card {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 14px;
+  min-height: 70px;
+  padding: 12px 16px;
+  background: var(--panel);
+  border: 2px solid var(--line);
+  border-top-color: var(--gold);
+}
+
+.cube-operation-card:hover {
+  background: var(--panel-raised);
+  border-color: var(--gold);
+}
+
+.cube-operation-card > img,
+.cube-operation-hero > img {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  object-fit: contain;
+}
+
+.cube-operation-copy {
+  display: grid;
+  min-width: 0;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.cube-operation-name {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--text);
+  font-family: var(--display-font);
+}
+
+.cube-operation-name small {
+  flex: 0 0 auto;
+  color: var(--faint);
+  font-family: var(--dos-font);
+  font-size: 10px;
+}
+
+.cube-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+}
+
+.cube-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  background: rgba(18, 20, 24, 0.5);
+  font-size: 13px;
+}
+
+.cube-table th,
+.cube-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.cube-table thead th {
+  color: var(--gold);
+  font-family: var(--dos-font);
+  font-size: 11px;
+  text-transform: uppercase;
+  background: #71181b;
+}
+
+.cube-table tbody th {
+  font-weight: 700;
+}
+
+.cube-table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.cube-unlock-table td:last-child,
+.cube-unlock-table th:last-child {
+  text-align: right;
+}
+
+.cube-unlock-table a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cube-unlock-table img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.cube-leveling {
+  padding-top: 2px;
+}
+
+.cube-formula,
+.cube-callout-link {
+  display: block;
+  padding: 13px 15px;
+  margin-top: 14px;
+  font-family: var(--dos-font);
+  font-size: 12px;
+  line-height: 1.5;
+  background: #101216;
+  border: 1px solid var(--line-raised);
+}
+
+.cube-callout-link {
+  color: var(--gold);
+  border-color: var(--gold-deep);
+}
+
+.cube-factor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 16px;
+}
+
+.cube-factor-stack {
+  display: grid;
+  gap: 16px;
+}
+
+.cube-factor-card {
+  min-width: 0;
+  background: rgba(18, 20, 24, 0.42);
+  border: 1px solid var(--line);
+}
+
+.cube-factor-card > span {
+  display: block;
+  padding: 4px 2px;
+  color: var(--gold);
+  font-family: var(--display-font);
+  font-size: 10px;
+}
+
+.cube-factor-card > p {
+  min-height: 66px;
+  padding: 6px 2px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.cube-factor-card table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.cube-factor-card th,
+.cube-factor-card td {
+  height: 41px;
+  padding: 8px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.cube-factor-card thead th {
+  height: 38px;
+  color: var(--gold);
+  font-family: var(--dos-font);
+  font-size: 10px;
+  text-transform: uppercase;
+  background: #71181b;
+}
+
+.cube-factor-card th:last-child,
+.cube-factor-card td:last-child {
+  text-align: right;
+}
+
+.cube-factor-card tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.cube-level-match {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 8px;
+  border-left: 4px solid var(--gold);
+}
+
+.cube-level-match strong {
+  color: var(--gold);
+}
+
+.cube-good-to-know {
+  margin-top: 30px;
+}
+
+.cube-good-to-know ul {
+  padding-left: 18px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.cube-good-to-know li + li {
+  margin-top: 7px;
+}
+
+.cube-exp-table-wrap {
+  width: 280px;
+  max-width: 100%;
+  border: 1px solid var(--line);
+}
+
+.cube-exp-table {
+  min-width: 0;
+}
+
+.cube-exp-table th:last-child,
+.cube-exp-table td:last-child {
+  text-align: right;
+}
+
+.cube-exp-table tbody th {
+  color: var(--gold);
+  text-align: center;
+}
+
+.cube-leveling-note {
+  margin-top: 14px;
+}
+
+.cube-back {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: var(--gold);
+  font-size: 13px;
+}
+
+.cube-operation-page {
+  padding-top: 18px;
+}
+
+.cube-operation-page h2 {
+  margin-top: 30px;
+}
+
+.cube-operation-hero {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cube-operation-hero h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+.cube-operation-hero > span,
+.cube-operation-hero > strong {
+  padding: 4px 9px;
+  font-family: var(--dos-font);
+  font-size: 10px;
+  border: 1px solid var(--line-raised);
+}
+
+.cube-operation-hero > strong {
+  color: var(--gold);
+}
+
+.cube-lead {
+  margin: 12px 0 22px;
+  color: #d0c7b4 !important;
+  font-weight: 700;
+}
+
+.cube-operation-intro {
+  color: var(--text) !important;
+  font-weight: 700;
+}
+
+.cube-operation-page .cube-section-copy {
+  font-size: 13px;
+}
+
+.cube-outcomes,
+.cube-grade-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.cube-odds-table th,
+.cube-odds-table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.grade-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 4px 8px;
+  color: var(--text);
+  font-family: var(--dos-font);
+  font-size: 11px;
+  line-height: 1.2;
+  border: 1px solid currentColor;
+}
+
+.grade-chip small {
+  color: var(--faint);
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.grade-common { color: #e8eaf1; }
+.grade-uncommon { color: #4cff36; }
+.grade-rare { color: #168cff; }
+.grade-legendary { color: #ffad16; }
+.grade-immortal { color: #ff2b35; }
+.grade-arcana { color: #d52bff; }
+.grade-beyond { color: #ff1878; }
+.grade-celestial { color: #6fe7ff; }
+.grade-divine { color: #ffe45f; }
+.grade-cosmic { color: #f2f2f2; }
+
+.cube-slot-tabs {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.cube-slot-tabs button {
+  min-height: 44px;
+  padding: 6px;
+  color: var(--muted);
+  font-family: var(--display-font);
+  background: #111318;
+  border: 1px solid var(--line-raised);
+}
+
+.cube-slot-tabs button.active,
+.cube-slot-tabs button:hover {
+  color: #15171b;
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.crafting-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.crafting-tier-card {
+  padding: 14px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--gold);
+}
+
+.crafting-tier-card > header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gold);
+  font-family: var(--dos-font);
+  font-size: 11px;
+}
+
+.crafting-flow {
+  display: grid;
+  grid-template-columns: 1fr auto 62px;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+.crafting-result {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  color: var(--gold);
+  font-size: 28px;
+  background: #101216;
+  border: 2px solid var(--line-raised);
+}
+
+.crafting-tier-card h3 {
+  margin-bottom: 3px;
+}
+
+.crafting-tier-card > small {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--faint);
+  font-family: var(--dos-font);
+  text-transform: uppercase;
+}
+
+.cube-grade-strip {
+  padding: 12px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+
+.offering-list {
+  display: grid;
+  gap: 8px;
+}
+
+.offering-row {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) 2fr;
+  gap: 14px;
+  padding: 12px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+
+.offering-row > div:first-child {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 10px;
+}
+
+.offering-row > div:first-child > span {
+  grid-column: 2;
+  color: var(--gold);
+  font-family: var(--dos-font);
+  font-size: 10px;
+}
+
+.cube-notes ul {
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.cube-notes a {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .cube-page {
+    padding: 24px 14px 40px;
+  }
+
+  .cube-page h1 {
+    font-size: 32px;
+  }
+
+  .cube-operation-page {
+    padding-top: 17px;
+  }
+
+  .cube-operation-grid,
+  .crafting-tier-grid,
+  .offering-row {
+    grid-template-columns: 1fr;
+  }
+
+  .cube-operation-card {
+    min-height: 70px;
+  }
+
+  .cube-factor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cube-factor-card > p {
+    min-height: 0;
+  }
+
+  .cube-level-match {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .cube-operation-hero {
+    flex-wrap: wrap;
+  }
+
+  .cube-slot-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cube-table {
+    min-width: 520px;
+  }
+
+  .cube-odds-table {
+    min-width: 0;
+    table-layout: fixed;
+  }
+
+  .cube-odds-table th:first-child {
+    width: 35%;
+  }
+
+  .cube-odds-table .cube-outcomes {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* Phase 5: source-specific Cube operation compositions. */
+.cube-operation-hero > strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cube-operation-hero > strong img,
+.alchemy-table td img,
+.extraction-table td img,
+.offering-table td img {
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.cube-operation-page:not(.crafting-source-page):not(.offering-source-page) .cube-lead {
+  margin: 8px 0 20px;
+}
+
+.cube-operation-page:not(.crafting-source-page):not(.offering-source-page) .cube-operation-intro {
+  margin-bottom: 32px;
+}
+
+.alchemy-table,
+.extraction-table,
+.enchantment-table {
+  min-width: 0;
+}
+
+.alchemy-table th:first-child {
+  width: 58%;
+}
+
+.alchemy-table td:nth-child(2),
+.alchemy-table td:nth-child(3),
+.alchemy-table th:nth-child(2),
+.alchemy-table th:nth-child(3) {
+  text-align: right;
+}
+
+.alchemy-table td:nth-child(2),
+.extraction-table td,
+.offering-table td:nth-child(3) {
+  font-weight: 700;
+}
+
+.alchemy-table td:nth-child(2),
+.extraction-table td,
+.offering-table td:nth-child(3) {
+  white-space: nowrap;
+}
+
+.cube-table-note {
+  margin-top: 11px;
+}
+
+.crafting-source-page,
+.offering-source-page {
+  padding-top: 32px;
+}
+
+.crafting-source-header,
+.offering-source-header {
+  margin-bottom: 20px;
+}
+
+.crafting-source-header h1,
+.offering-source-header h1 {
+  color: #ffe3ad;
+}
+
+.crafting-source-header p,
+.offering-source-header p {
+  max-width: 760px;
+  margin: 0;
+  color: #c8c0ad;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.crafting-source-page .cube-slot-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 18px;
+}
+
+.crafting-source-page .cube-slot-tabs button {
+  display: inline-flex;
+  min-width: 112px;
+  min-height: 54px;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 10px;
+  font-family: var(--dos-font);
+  font-size: 10px;
+  background: #171a1d;
+  border: 2px solid var(--line-raised);
+}
+
+.crafting-source-page .cube-slot-tabs button.active,
+.crafting-source-page .cube-slot-tabs button:hover {
+  color: var(--gold);
+  background: #171a1d;
+  border-color: var(--gold);
+}
+
+.crafting-source-page .cube-slot-tabs img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  background: #0f1115;
+  image-rendering: pixelated;
+}
+
+.crafting-source-page .crafting-tier-grid {
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.crafting-source-page .crafting-tier-card {
+  padding: 0;
+  background: #181b21;
+  border: 2px solid var(--line-raised);
+  border-top: 0;
+}
+
+.crafting-source-page .crafting-tier-card > header {
+  min-height: 33px;
+  align-items: center;
+  padding: 7px 13px;
+  border-bottom: 1px solid var(--line);
+}
+
+.crafting-source-flow {
+  display: flex;
+  min-height: 82px;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+}
+
+.crafting-material,
+.crafting-source-flow .crafting-result {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  place-items: center;
+  background: #0d0f12 url('/game/ui/ItemSlot_Bg.png') center / cover no-repeat;
+  border: 2px solid #090a0c;
+}
+
+.crafting-material img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.crafting-source-flow .crafting-result {
+  color: var(--gold);
+  font-size: 24px;
+}
+
+.crafting-source-flow > b {
+  color: var(--gold);
+}
+
+.crafting-source-flow h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.crafting-source-flow small {
+  color: var(--faint);
+  font-family: var(--dos-font);
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.crafting-probability-bar {
+  display: flex;
+  height: 9px;
+  margin: 0 14px 8px;
+  overflow: hidden;
+  background: #0e1014;
+}
+
+.crafting-probability-bar span {
+  display: block;
+  height: 100%;
+  background: currentColor;
+}
+
+.crafting-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 14px;
+  padding: 0 14px 12px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.crafting-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.crafting-legend span > b {
+  width: 10px;
+  height: 10px;
+  background: currentColor;
+}
+
+.crafting-possible {
+  padding: 9px 14px;
+  margin: 0 !important;
+  color: var(--faint) !important;
+  font-family: var(--dos-font);
+  font-size: 10px !important;
+  border-top: 1px solid var(--line);
+}
+
+.cube-grade-strip {
+  margin-bottom: 28px;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.enchantment-table td:not(:first-child) {
+  color: var(--gold);
+  font-family: var(--dos-font);
+  text-align: right;
+}
+
+.enchantment-table th:not(:first-child) {
+  text-align: right;
+}
+
+.extraction-table th,
+.extraction-table td {
+  text-align: right;
+}
+
+.extraction-table thead th:first-child,
+.extraction-table tbody th {
+  text-align: center;
+}
+
+.extraction-table tbody th {
+  color: var(--gold);
+  font-family: var(--dos-font);
+}
+
+.offering-grade-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 8px 0 18px;
+}
+
+.offering-grade-key span {
+  padding: 5px 9px;
+  font-family: var(--dos-font);
+  font-size: 9px;
+  border: 1px solid var(--line-raised);
+}
+
+.offering-table-wrap {
+  overflow: hidden;
+}
+
+.offering-table {
+  min-width: 1110px;
+}
+
+.offering-table th,
+.offering-table td {
+  height: 51px;
+  padding: 8px 11px;
+  text-align: center;
+}
+
+.offering-table tbody th {
+  display: flex;
+  min-width: 335px;
+  align-items: center;
+  gap: 9px;
+  text-align: left;
+}
+
+.offering-table tbody th > img {
+  width: 31px;
+  height: 31px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.offering-table tbody td:first-child {
+  color: var(--faint);
+}
+
+.offering-probability {
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  .alchemy-table,
+  .extraction-table,
+  .enchantment-table {
+    min-width: 0;
+    table-layout: fixed;
+  }
+
+  .alchemy-table th,
+  .alchemy-table td {
+    padding: 10px 14px;
+  }
+
+  .alchemy-table th:first-child {
+    width: 48%;
+  }
+
+  .crafting-source-page,
+  .offering-source-page {
+    padding-top: 25px;
+  }
+
+  .crafting-source-page .cube-slot-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .crafting-source-page .cube-slot-tabs button {
+    min-width: 0;
+  }
+
+  .crafting-source-flow {
+    min-height: 98px;
+  }
+
+  .crafting-source-page .crafting-tier-card > header {
+    min-height: 41px;
+  }
+
+  .enchantment-table th,
+  .enchantment-table td {
+    padding: 10px 13px;
+  }
+
+  .enchantment-table th:first-child {
+    width: 42%;
+  }
+
+  .extraction-table {
+    font-size: 12px;
+  }
+
+  .extraction-table th,
+  .extraction-table td {
+    padding: 10px 6px;
+  }
+
+  .extraction-table img {
+    width: 11px !important;
+    height: 11px !important;
+  }
+
+  .offering-table-wrap {
+    overflow: hidden;
+  }
+
+  .offering-table {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+  }
+
+  .offering-table th:nth-child(n+3),
+  .offering-table td:nth-child(n+3) {
+    display: none;
+  }
+
+  .offering-table th:first-child,
+  .offering-table td:first-child {
+    width: 45px;
+  }
+
+  .offering-table tbody th {
+    min-width: 0;
+  }
+}

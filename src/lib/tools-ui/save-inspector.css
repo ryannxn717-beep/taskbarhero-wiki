@@ -1,0 +1,304 @@
+.save-page {
+  width: 100%;
+  max-width: 980px;
+  padding: 16px 28px 14px;
+  margin: 0 auto;
+  color: var(--text);
+}
+
+.save-construction {
+  display: grid;
+  min-height: 90px;
+  gap: 8px;
+  padding: 8px 56px;
+  color: #e3d5b9;
+  text-align: center;
+  background:
+    linear-gradient(135deg, var(--gold) 0 12px, #171307 12px 23px, var(--gold) 23px 35px, transparent 35px) left center / 40px 100% no-repeat,
+    linear-gradient(-45deg, var(--gold) 0 12px, #171307 12px 23px, var(--gold) 23px 35px, transparent 35px) right center / 40px 100% no-repeat,
+    #171307;
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 0 2px #111;
+}
+
+.save-construction strong,
+.save-construction span {
+  font-family: var(--display-font);
+}
+
+.save-construction strong {
+  font-size: 20px;
+}
+
+.save-construction span {
+  font-family: var(--dos-font);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.save-heading {
+  padding-top: 48px;
+  text-align: center;
+  background: url('/game/ui/BG_hero_dragonHead.png') center 18px / 156px 53px no-repeat;
+}
+
+.save-heading h1 {
+  margin: 0 0 8px;
+  font-family: var(--display-font);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.save-workbench {
+  position: relative;
+  max-width: 570px;
+  padding: 12px;
+  margin: 0 auto;
+  background: #111317;
+  border: 2px solid var(--line-raised);
+  box-shadow: 0 0 0 2px #070809;
+}
+
+.save-drop-zone {
+  display: grid;
+  width: 100%;
+  min-height: 415px;
+  place-items: center;
+  align-content: center;
+  gap: 14px;
+  padding: 28px;
+  color: #ddd3bd;
+  text-align: center;
+  background:
+    linear-gradient(rgba(50, 22, 24, 0.65), rgba(20, 23, 24, 0.82)),
+    url('/game/ui/SelectHero_Bg.png') center / cover;
+  border: 2px dashed #5e6870;
+}
+
+.save-drop-zone:hover,
+.save-drop-zone:focus-visible {
+  border-color: var(--gold);
+}
+
+.save-hero-label {
+  color: #ff852e;
+  font-family: var(--display-font);
+  font-size: 20px;
+  text-shadow: 2px 2px #4d090b;
+}
+
+.save-gears {
+  color: white;
+  font-size: 50px;
+  line-height: 0.8;
+  text-shadow: 2px 2px #111;
+}
+
+.save-drop-zone > strong {
+  font-family: var(--display-font);
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.save-drop-zone > span:not(.save-hero-label, .save-gears, .save-file-button) {
+  max-width: 420px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.save-file-button {
+  min-width: 132px;
+  padding: 9px 16px;
+  color: #fff0bd;
+  font-family: var(--dos-font);
+  font-size: 11px;
+  text-transform: uppercase;
+  background: #7a210d;
+  border: 2px solid #ee8d12;
+  box-shadow: inset 0 0 0 2px #a83b0c;
+}
+
+.save-drop-zone small {
+  color: var(--faint);
+  font-family: var(--dos-font);
+  font-size: 9px;
+}
+
+.save-advanced {
+  position: absolute;
+  right: 16px;
+  bottom: 58px;
+  left: 16px;
+  z-index: 1;
+  padding: 0 4px;
+}
+
+.save-advanced[open] {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  padding: 14px 4px 2px;
+}
+
+.save-advanced summary {
+  color: var(--faint);
+  font-family: var(--dos-font);
+  font-size: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.save-advanced label {
+  display: block;
+  margin: 14px 0 6px;
+  color: var(--gold);
+  font-family: var(--display-font);
+}
+
+.save-advanced textarea {
+  width: 100%;
+  padding: 12px;
+  resize: vertical;
+  color: var(--text);
+  font: 12px/1.5 var(--dos-font);
+  background: #0e1013;
+  border: 1px solid var(--line-raised);
+}
+
+.save-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.save-page .wiki-button.primary {
+  color: #171207;
+  background: var(--gold);
+  border-color: #ffd972;
+}
+
+.save-feedback,
+.save-summary,
+.save-confirm,
+.save-storage {
+  max-width: 570px;
+  padding: 16px;
+  margin: 16px auto 0;
+  background: var(--panel);
+  border: 1px solid var(--line-raised);
+}
+
+.save-feedback.error {
+  color: #ffc7c8;
+  border-color: #8e1719;
+}
+
+.save-feedback.success {
+  color: #b9ffad;
+  border-color: #367f31;
+}
+
+.save-summary h2,
+.save-confirm h2,
+.save-storage h2 {
+  margin: 0 0 10px;
+  font-family: var(--display-font);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.save-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.save-summary-grid > div {
+  display: grid;
+  gap: 5px;
+  padding: 10px;
+  background: #111318;
+  border: 1px solid var(--line);
+}
+
+.save-summary-grid span,
+.save-summary-grid small {
+  color: var(--faint);
+  font-family: var(--dos-font);
+  font-size: 9px;
+}
+
+.save-summary-grid strong {
+  font-size: 13px;
+}
+
+.save-use {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.save-confirm {
+  border-color: var(--gold);
+}
+
+.save-storage p,
+.save-confirm p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+@media (max-width: 720px) {
+  .save-page {
+    padding: 16px 12px 21px;
+  }
+
+  .save-construction {
+    min-height: 100px;
+    padding: 8px 44px;
+  }
+
+  .save-construction strong {
+    font-size: 18px;
+  }
+
+  .save-heading {
+    padding-top: 45px;
+  }
+
+  .save-heading h1 {
+    font-size: 36px;
+  }
+
+  .save-workbench {
+    padding: 10px;
+  }
+
+  .save-drop-zone {
+    min-height: 355px;
+    padding: 24px 12px;
+  }
+
+  .save-advanced {
+    right: 12px;
+    bottom: 30px;
+    left: 12px;
+  }
+
+  .save-drop-zone > strong {
+    font-size: 24px;
+  }
+
+  .save-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .save-actions > .wiki-button {
+    min-height: 44px;
+    flex: 1 1 140px;
+  }
+}

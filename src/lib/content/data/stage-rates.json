@@ -1,0 +1,482 @@
+{
+  "1101": {
+    "monsterRate": 160,
+    "bossRate": 1000
+  },
+  "1102": {
+    "monsterRate": 160,
+    "bossRate": 1000
+  },
+  "1103": {
+    "monsterRate": 160,
+    "bossRate": 1000
+  },
+  "1104": {
+    "monsterRate": 120,
+    "bossRate": 1000
+  },
+  "1105": {
+    "monsterRate": 120,
+    "bossRate": 800
+  },
+  "1106": {
+    "monsterRate": 80,
+    "bossRate": 800
+  },
+  "1107": {
+    "monsterRate": 80,
+    "bossRate": 600
+  },
+  "1108": {
+    "monsterRate": 30,
+    "bossRate": 400
+  },
+  "1109": {
+    "monsterRate": 30,
+    "bossRate": 400
+  },
+  "1110": {
+    "monsterRate": 0,
+    "bossRate": 0
+  },
+  "1201": {
+    "monsterRate": 30,
+    "bossRate": 400
+  },
+  "1202": {
+    "monsterRate": 30,
+    "bossRate": 400
+  },
+  "1203": {
+    "monsterRate": 25,
+    "bossRate": 300
+  },
+  "1204": {
+    "monsterRate": 25,
+    "bossRate": 300
+  },
+  "1205": {
+    "monsterRate": 25,
+    "bossRate": 300
+  },
+  "1206": {
+    "monsterRate": 25,
+    "bossRate": 300
+  },
+  "1207": {
+    "monsterRate": 25,
+    "bossRate": 300
+  },
+  "1208": {
+    "monsterRate": 20,
+    "bossRate": 200
+  },
+  "1209": {
+    "monsterRate": 20,
+    "bossRate": 200
+  },
+  "1210": {
+    "monsterRate": 0,
+    "bossRate": 0
+  },
+  "1301": {
+    "monsterRate": 20,
+    "bossRate": 200
+  },
+  "1302": {
+    "monsterRate": 20,
+    "bossRate": 200
+  },
+  "1303": {
+    "monsterRate": 20,
+    "bossRate": 200
+  },
+  "1304": {
+    "monsterRate": 20,
+    "bossRate": 200
+  },
+  "1305": {
+    "monsterRate": 20,
+    "bossRate": 200
+  },
+  "1306": {
+    "monsterRate": 20,
+    "bossRate": 200
+  },
+  "1307": {
+    "monsterRate": 20,
+    "bossRate": 200
+  },
+  "1308": {
+    "monsterRate": 20,
+    "bossRate": 200
+  },
+  "1309": {
+    "monsterRate": 20,
+    "bossRate": 200
+  },
+  "1310": {
+    "monsterRate": 0,
+    "bossRate": 0
+  },
+  "2101": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2102": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2103": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2104": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2105": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2106": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2107": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2108": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2109": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2110": {
+    "monsterRate": 0,
+    "bossRate": 0
+  },
+  "2201": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2202": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2203": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2204": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2205": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2206": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2207": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2208": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2209": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2210": {
+    "monsterRate": 0,
+    "bossRate": 0
+  },
+  "2301": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2302": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2303": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2304": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2305": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2306": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2307": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2308": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2309": {
+    "monsterRate": 15,
+    "bossRate": 150
+  },
+  "2310": {
+    "monsterRate": 0,
+    "bossRate": 0
+  },
+  "3101": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3102": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3103": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3104": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3105": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3106": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3107": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3108": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3109": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3110": {
+    "monsterRate": 0,
+    "bossRate": 0
+  },
+  "3201": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3202": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3203": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3204": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3205": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3206": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3207": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3208": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3209": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3210": {
+    "monsterRate": 0,
+    "bossRate": 0
+  },
+  "3301": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3302": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3303": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3304": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3305": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3306": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3307": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3308": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3309": {
+    "monsterRate": 10,
+    "bossRate": 100
+  },
+  "3310": {
+    "monsterRate": 0,
+    "bossRate": 0
+  },
+  "4101": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4102": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4103": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4104": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4105": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4106": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4107": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4108": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4109": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4110": {
+    "monsterRate": 0,
+    "bossRate": 0
+  },
+  "4201": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4202": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4203": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4204": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4205": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4206": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4207": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4208": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4209": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4210": {
+    "monsterRate": 0,
+    "bossRate": 0
+  },
+  "4301": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4302": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4303": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4304": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4305": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4306": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4307": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4308": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4309": {
+    "monsterRate": 8,
+    "bossRate": 80
+  },
+  "4310": {
+    "monsterRate": 0,
+    "bossRate": 0
+  }
+}

@@ -1,0 +1,979 @@
+.database-family-page,
+.monster-detail {
+  width: 100%;
+  min-width: 0;
+  padding: 27px 30px 34px;
+}
+
+.database-family-heading h1 {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--display-font);
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.database-family-heading p,
+.monster-description {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.grade-tone-common { --grade-color: #e8eaf1; }
+.grade-tone-uncommon { --grade-color: #54fc0c; }
+.grade-tone-rare { --grade-color: #168cff; }
+.grade-tone-legendary { --grade-color: #ff9e0b; }
+.grade-tone-immortal { --grade-color: #ff2433; }
+.grade-tone-arcana { --grade-color: #d52bff; }
+.grade-tone-beyond { --grade-color: #ff2877; }
+.grade-tone-celestial { --grade-color: #62d0e8; }
+.grade-tone-divine { --grade-color: #ffe24c; }
+.grade-tone-cosmic { --grade-color: #f1f1f1; }
+
+.grade-ladder {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  padding: 0;
+  margin: 20px 0 24px;
+  list-style: none;
+  border-top: 2px solid var(--line-raised);
+  border-left: 2px solid var(--line-raised);
+}
+
+.grade-ladder li {
+  display: grid;
+  min-width: 0;
+  height: 49px;
+  align-content: center;
+  gap: 8px;
+  padding: 8px 10px;
+  color: var(--grade-color);
+  text-align: center;
+  background: var(--panel);
+  border-right: 1px solid var(--line-raised);
+  border-bottom: 1px solid var(--line-raised);
+}
+
+.grade-ladder li:nth-last-child(-n + 2) {
+  grid-column: span 4;
+}
+
+.grade-ladder li > span {
+  display: block;
+  width: 100%;
+  height: 6px;
+  background: var(--grade-color);
+}
+
+.grade-ladder strong,
+.grade-name {
+  font-family: var(--dos-font);
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.grade-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--line-raised);
+}
+
+.grade-properties {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.grade-properties th,
+.grade-properties td {
+  height: 46px;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.grade-properties thead th {
+  height: 37px;
+  color: var(--tan);
+  font-family: var(--dos-font);
+  font-size: 9px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: #761d20;
+}
+
+.grade-properties th:first-child {
+  text-align: left;
+}
+
+.grade-properties tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.grade-name {
+  display: inline-block;
+  padding: 7px 8px 6px;
+  color: var(--grade-color);
+  border: 1px solid var(--line-raised);
+}
+
+.database-coin {
+  margin-right: 4px;
+  color: var(--gold);
+  font-size: 9px;
+}
+
+.database-filter-stack {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.database-filter-row {
+  display: grid;
+  grid-template-columns: 49px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+}
+
+.database-filter-row > span {
+  padding-top: 12px;
+  color: var(--faint);
+  font-family: var(--dos-font);
+  font-size: 9px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.database-filter-row > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.database-filter-row button,
+.monster-animation-tabs button {
+  min-height: 36px;
+  padding: 7px 12px;
+  color: var(--muted);
+  font-family: var(--dos-font);
+  font-size: 10px;
+  line-height: 1;
+  background: var(--panel-deep);
+  border: 2px solid var(--line-raised);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.database-filter-row button:hover,
+.monster-animation-tabs button:hover {
+  color: var(--text);
+  border-color: var(--gold-deep);
+}
+
+.database-filter-row button.active,
+.monster-animation-tabs button.active {
+  color: #241801;
+  background: #d79c2d;
+  border-color: #f1bc45;
+}
+
+.database-filter-row button.grade-filter:not(.active) {
+  color: var(--muted);
+  border-color: var(--grade-color);
+}
+
+.database-filter-row button.grade-filter.active {
+  color: #121317;
+  background: var(--grade-color);
+  border-color: var(--grade-color);
+}
+
+.material-explorer .database-filter-row:first-child button:not(:first-child),
+.material-explorer[data-mode='materials'] .database-filter-row:nth-child(2) button:not(:first-child) {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.material-explorer[data-mode='materials'] .database-filter-row:nth-child(2) button:not(:first-child) {
+  padding-right: 17px;
+  padding-left: 17px;
+}
+
+.stat-filter-row button:not(:first-child) {
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.database-family-count {
+  margin: 18px 0 14px;
+  color: var(--faint);
+  font-family: var(--dos-font);
+  font-size: 10px;
+}
+
+.material-explorer[data-mode='materials'] .database-family-count,
+.stage-box-explorer .compact-count,
+.monster-explorer .compact-count {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.material-card-grid,
+.stage-box-grid,
+.monster-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.material-card-grid {
+  margin-top: 24px;
+}
+
+.material-card,
+.stage-box-card,
+.monster-card {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--text);
+  background: #181a1e;
+  border: 2px solid var(--line-raised);
+  border-top: 5px solid var(--grade-color, var(--line-raised));
+  text-decoration: none;
+}
+
+.material-card:hover,
+.stage-box-card:hover,
+.monster-card:hover {
+  border-color: var(--gold);
+}
+
+.material-card-art,
+.stage-box-art,
+.monster-card-art {
+  display: grid;
+  place-items: center;
+  background:
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.025) 0 4px, transparent 4px 8px),
+    linear-gradient(#202327, #191b1e);
+  border-bottom: 2px solid var(--line);
+}
+
+.material-card-art,
+.stage-box-art {
+  height: 123px;
+}
+
+.material-card-art img,
+.stage-box-art img {
+  width: 88px;
+  height: 88px;
+  padding: 12px;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.material-card-copy,
+.stage-box-copy,
+.monster-card-copy {
+  display: grid;
+  min-width: 0;
+  padding: 12px;
+}
+
+.material-card-copy {
+  min-height: 99px;
+}
+
+.material-card-copy small,
+.stage-box-copy > small,
+.monster-card-copy > small {
+  color: var(--grade-color, var(--faint));
+  font-family: var(--dos-font);
+  font-size: 8px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.material-card-copy strong,
+.stage-box-copy strong,
+.monster-card-copy strong {
+  margin-top: 9px;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+}
+
+.effect-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.effect-card {
+  min-width: 0;
+  padding: 17px 16px 13px;
+  background: #181a1e;
+  border: 2px solid var(--line-raised);
+  border-top: 5px solid #e4e6e9;
+}
+
+.effect-card > header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.effect-card > header > span {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  place-items: center;
+  border: 2px solid #e5e7e9;
+}
+
+.effect-card > header img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.effect-card h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+.effect-card header p {
+  margin: 7px 0 0;
+  color: var(--text);
+  font-family: var(--dos-font);
+  font-size: 7px;
+  text-transform: uppercase;
+}
+
+.effect-card section {
+  padding: 12px 0 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.effect-card section:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.effect-card h3 {
+  margin: 0 0 8px;
+  color: var(--faint);
+  font-family: var(--dos-font);
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.effect-card section p {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 9px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.effect-card section p + p {
+  margin-top: 7px;
+}
+
+.effect-card section strong {
+  color: var(--gold);
+  font-family: var(--dos-font);
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.effect-card section small {
+  color: var(--faint);
+  font-family: var(--dos-font);
+  font-size: 8px;
+}
+
+.stage-box-note {
+  margin: 18px 0 24px;
+  padding: 10px 12px;
+  color: var(--faint);
+  font-size: 14px;
+  line-height: 1.4;
+  background: var(--panel-deep);
+  border-left: 2px solid var(--line-raised);
+}
+
+.database-name-search {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.database-name-search input {
+  width: 219px;
+  height: 36px;
+  padding: 0 12px;
+  color: var(--text);
+  background: var(--panel-deep);
+  border: 2px solid var(--line-raised);
+  border-radius: 0;
+}
+
+.database-name-search label {
+  display: block;
+}
+
+.database-name-search input::placeholder {
+  color: var(--faint);
+}
+
+.stage-box-grid {
+  margin-top: 24px;
+}
+
+.stage-box-card {
+  position: relative;
+  border-top-color: var(--grade-color);
+}
+
+.stage-box-card.deleted {
+  border-top-color: #bc262b;
+}
+
+.stage-box-deleted {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 15px;
+  color: #fff;
+  font-family: var(--dos-font);
+  font-size: 6px;
+  line-height: 15px;
+  text-align: center;
+  background: #a5282d;
+}
+
+.stage-box-card.deleted .stage-box-art img {
+  filter: grayscale(1) brightness(0.65);
+}
+
+.stage-box-copy {
+  min-height: 101px;
+}
+
+.stage-box-copy > span {
+  margin-top: 8px;
+  color: var(--faint);
+  font-size: 12px;
+}
+
+.monster-controls {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 20px 0 24px;
+}
+
+.monster-type-filter {
+  display: block;
+}
+
+.monster-card {
+  border-top-color: var(--line-raised);
+}
+
+.monster-card-art {
+  height: 124px;
+}
+
+.monster-card-art > img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.monster-list-sprite,
+.monster-detail-sprite {
+  width: var(--sprite-w);
+  height: var(--sprite-h);
+  background-image: var(--sprite-sheet);
+  background-position: 0 0;
+  background-size: calc(var(--sprite-w) * var(--sprite-frames)) var(--sprite-h);
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+.monster-list-sprite {
+  display: none;
+}
+
+.monster-card:hover .monster-list-sprite,
+.monster-detail-sprite {
+  animation: monster-database-sprite 0.8s steps(var(--sprite-frames)) infinite;
+}
+
+.monster-card:hover .monster-card-art > img {
+  display: none;
+}
+
+.monster-card:hover .monster-list-sprite {
+  display: block;
+}
+
+@keyframes monster-database-sprite {
+  from { background-position-x: 0; }
+  to { background-position-x: calc(var(--sprite-w) * var(--sprite-frames) * -1); }
+}
+
+.monster-card-copy {
+  min-height: 116px;
+}
+
+.monster-card-copy > small {
+  color: #5e636c;
+}
+
+.monster-health {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.monster-health b {
+  margin-right: 4px;
+  color: #ff2632;
+  font-family: var(--dos-font);
+  font-size: 9px;
+}
+
+.monster-health i {
+  margin-left: 7px;
+  color: #e2354b;
+  font-style: normal;
+}
+
+.monster-attack {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 9px;
+}
+
+.monster-attack small {
+  color: var(--faint);
+  font-family: var(--dos-font);
+  font-size: 8px;
+}
+
+.monster-attack b,
+.element-badge {
+  display: inline-block;
+  padding: 3px 5px;
+  color: var(--text);
+  font-family: var(--dos-font);
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1;
+  border: 1px solid var(--line-raised);
+}
+
+.monster-detail {
+  padding-top: 17px;
+}
+
+.monster-detail-back {
+  display: inline-block;
+  margin-bottom: 0;
+  color: var(--gold);
+  font-family: var(--dos-font);
+  font-size: 10px;
+}
+
+.monster-detail-layout {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  align-items: start;
+  gap: 24px;
+}
+
+.monster-identity-card {
+  min-width: 0;
+  height: 315px;
+  min-height: 315px;
+  padding: 20px 22px 0;
+  text-align: center;
+  background: #181a1e;
+  border: 2px solid var(--line-dark);
+  border-top: 5px solid #6b7181;
+  box-shadow: 0 0 0 1px var(--line-raised);
+}
+
+.monster-animation-stage {
+  display: grid;
+  height: 205px;
+  place-items: center;
+}
+
+.monster-animation-stage > img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.monster-animation-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+.monster-animation-tabs button {
+  min-width: 0;
+  min-height: 25px;
+  padding: 5px 9px;
+  font-size: 7px;
+  border-width: 1px;
+}
+
+.monster-identity-card h1 {
+  margin: 15px 0 0;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.monster-identity-card > p {
+  margin: 10px 0 0;
+  color: var(--faint);
+  font-family: var(--dos-font);
+  font-size: 10px;
+}
+
+.monster-detail-facts {
+  min-width: 0;
+}
+
+.monster-description {
+  margin-top: 0;
+  min-height: 47px;
+}
+
+.monster-fact-section {
+  margin-top: 27px;
+}
+
+.monster-fact-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 16px;
+  color: var(--gold);
+  font-family: var(--dos-font);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.monster-fact-section h2::after {
+  height: 2px;
+  flex: 1;
+  content: '';
+  background: var(--line-raised);
+}
+
+.monster-fact-section h2 small {
+  color: var(--gold);
+  font-size: inherit;
+}
+
+.monster-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.monster-stat-grid > div {
+  display: grid;
+  min-height: 64px;
+  align-content: center;
+  gap: 7px;
+  padding: 9px 12px;
+  background: linear-gradient(145deg, #1a1d21, #131519);
+  border: 1px solid var(--line-raised);
+  box-shadow: inset 0 0 0 1px #090b0e;
+}
+
+.monster-stat-grid small {
+  color: var(--faint);
+  font-family: var(--dos-font);
+  font-size: 8px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.monster-stat-grid strong {
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.monster-stage-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 2px solid var(--line-raised);
+}
+
+.monster-stage-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.monster-stage-table th,
+.monster-stage-table td {
+  height: 42px;
+  padding: 8px 13px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.monster-stage-table th {
+  height: 38px;
+  color: var(--gold);
+  font-family: var(--dos-font);
+  font-size: 9px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: #771d20;
+}
+
+.monster-stage-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.monster-stage-table th:first-child { width: 47%; }
+.monster-stage-table th:nth-child(2) { width: 35%; }
+.monster-stage-table th:last-child,
+.monster-stage-table td:last-child {
+  width: 18%;
+  color: var(--muted);
+  text-align: right;
+}
+
+.monster-stage-table td:first-child {
+  white-space: nowrap;
+}
+
+.monster-stage-table a {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.monster-stage-table a:hover {
+  color: var(--gold);
+}
+
+.monster-first-stage {
+  margin-right: 7px;
+  color: var(--gold);
+}
+
+.monster-difficulty {
+  margin-left: 8px;
+  font-family: var(--dos-font);
+  font-size: 7px;
+  text-transform: uppercase;
+}
+
+.difficulty-normal { color: #f4bc42; }
+.difficulty-nightmare { color: #bf5cff; }
+.difficulty-hell { color: #ff3443; }
+.difficulty-torment { color: #ff3c8c; }
+
+.monster-spawn-rate-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.monster-spawn-rate-cell > span {
+  width: 48px;
+  height: 7px;
+  overflow: hidden;
+  background: #363c48;
+  border: 1px solid #4c5360;
+}
+
+.monster-spawn-rate-cell i {
+  display: block;
+  height: 100%;
+  background: var(--gold);
+}
+
+.monster-spawn-rate-cell strong {
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .monster-card:hover .monster-list-sprite,
+  .monster-detail-sprite {
+    animation: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .database-family-page,
+  .monster-detail {
+    padding: 25px 14px 30px;
+  }
+
+  .database-family-heading h1 {
+    font-size: 32px;
+  }
+
+  .database-family-heading p,
+  .monster-description {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .grade-ladder {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-top: 18px;
+  }
+
+  .grade-ladder li:nth-last-child(-n + 2) {
+    grid-column: span 2;
+  }
+
+  .grade-ladder li {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+
+  .database-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .database-filter-row > span {
+    width: 52px;
+    flex: 0 0 52px;
+    padding-top: 12px;
+  }
+
+  .database-filter-row > div {
+    display: contents;
+  }
+
+  .database-filter-row button {
+    min-height: 36px;
+  }
+
+  .material-card-grid,
+  .stage-box-grid,
+  .monster-card-grid,
+  .effect-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .effect-card {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .stage-box-note {
+    margin-bottom: 24px;
+  }
+
+  .database-name-search,
+  .database-name-search label,
+  .database-name-search input {
+    width: 100%;
+  }
+
+  .monster-controls {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 24px;
+  }
+
+  .monster-controls .database-name-search {
+    display: block;
+  }
+
+  .monster-card-art {
+    height: 124px;
+  }
+
+  .monster-card-copy {
+    min-height: 116px;
+  }
+
+  .monster-detail-back {
+    margin-bottom: 14px;
+  }
+
+  .monster-detail-layout {
+    grid-template-columns: 1fr;
+    gap: 27px;
+  }
+
+  .monster-identity-card {
+    height: 315px;
+    min-height: 315px;
+    padding-top: 20px;
+  }
+
+  .monster-animation-stage {
+    height: 171px;
+  }
+
+  .monster-stat-grid {
+    gap: 8px;
+  }
+
+  .monster-stat-grid > div {
+    min-height: 64px;
+  }
+
+  .monster-stage-table th,
+  .monster-stage-table td {
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+}

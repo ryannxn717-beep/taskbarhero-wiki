@@ -1,0 +1,85 @@
+@import './tokens.css';
+
+@font-face {
+  font-family: 'OrangeKid';
+  src: url('/fonts/OrangeKid.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DOSVGA';
+  src: url('/fonts/PerfectDOSVGA437.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LatoWiki';
+  src: url('/fonts/Lato-Semibold.ttf') format('truetype');
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  letter-spacing: 0 !important;
+  scrollbar-color: var(--line-raised) var(--panel);
+  scrollbar-width: thin;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+  margin: 0;
+  overflow: hidden;
+  color: var(--text);
+  background:
+    linear-gradient(rgba(12, 13, 15, 0.1), rgba(10, 10, 12, 0.94) 44rem),
+    linear-gradient(
+      90deg,
+      rgba(32, 70, 57, 0.34),
+      transparent 22%,
+      transparent 78%,
+      rgba(96, 38, 34, 0.28)
+    ),
+    url('/game/ui/SelectHero_Bg.png') center top / min(122vh, 980px) no-repeat fixed,
+    var(--canvas);
+  font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  image-rendering: pixelated;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,629 @@
+.home-page {
+  min-height: 100%;
+}
+
+.wiki-main-content {
+  padding: 18px 30px 30px;
+}
+
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 34px;
+  min-height: 548px;
+  margin-bottom: 32px;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(137, 22, 24, 0.58), rgba(24, 26, 29, 0.2) 82px),
+    linear-gradient(90deg, rgba(31, 69, 60, 0.38), transparent 46%),
+    var(--hero-panel);
+  border: 2px solid #111;
+  box-shadow: 0 0 0 2px #4b4f55, 0 0 0 4px #121315, 0 10px rgba(0, 0, 0, 0.34);
+}
+
+.home-hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 38px;
+}
+
+.eyebrow {
+  display: none;
+  color: #f2b443;
+  font-size: 12px;
+}
+
+.home-hero-title {
+  margin: 0;
+  color: #fff0c8;
+  font: 58px/0.88 var(--display-font);
+  text-shadow: 2px 2px #1b0b09;
+}
+
+.home-hero-title span {
+  color: #f2b443;
+}
+
+.home-hero-text {
+  margin: 12px 0 0;
+  color: #d2c9b5;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.home-hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.game-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  min-width: 148px;
+  height: 40px;
+  padding: 0 18px;
+  color: #fff3c4;
+  font: 13px/1.5 var(--dos-font);
+  background: #73300d url('/game/ui/TabButton_Large_Active.png') center / 100% 100% no-repeat;
+  border: 2px solid #3a1b08;
+}
+
+.game-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.game-button.secondary {
+  color: #f2b443;
+  background: linear-gradient(rgba(255, 255, 255, 0.04), transparent), #1a1c20;
+  border-color: #4a4e55;
+}
+
+.game-button:hover {
+  color: #fff;
+  filter: brightness(1.12);
+}
+
+.hero-stat-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding-top: 20px;
+}
+
+.hero-stat {
+  min-height: 63px;
+  padding: 10px;
+  background: rgba(11, 12, 14, 0.72);
+  border: 1px solid #4a4e55;
+}
+
+.hero-stat b,
+.hero-stat span {
+  display: block;
+}
+
+.hero-stat b {
+  color: #f2b443;
+  font: 13px/1.5 var(--dos-font);
+}
+
+.hero-stat span {
+  margin-top: 3px;
+  color: #b9b2a1;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.home-hero-visual {
+  display: flex;
+  align-items: center;
+  padding: 22px 24px 22px 0;
+}
+
+.game-window {
+  width: 100%;
+  background: linear-gradient(rgba(148, 23, 25, 0.3), transparent 74px), #151719;
+  border: 2px solid #0b0c0d;
+  box-shadow: 0 0 0 2px #4c5056, 0 0 0 4px #111, 0 10px rgba(0, 0, 0, 0.34);
+}
+
+.game-window-title,
+.patch-titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  color: #f7c568;
+  font: 24px/36px var(--display-font);
+  text-transform: uppercase;
+  background: linear-gradient(#8b1d1d, #581214 58%, #310a0d);
+  border-bottom: 2px solid #101113;
+}
+
+.game-window-body {
+  display: grid;
+  grid-template-columns: 114px minmax(0, 1fr);
+  gap: 14px;
+  padding: 16px;
+}
+
+.hero-loadout {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+.portrait-frame {
+  display: grid;
+  place-items: center;
+  justify-self: center;
+  width: 92px;
+  height: 92px;
+  background: #090a0c url('/game/ui/Arrage_ChaIllust_Large_BG.png') center / 100% 100% no-repeat;
+}
+
+.portrait-frame > img {
+  width: 72px;
+  height: 82px;
+  object-fit: contain;
+  object-position: bottom center;
+}
+
+.mini-slots {
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  gap: 5px;
+  justify-content: center;
+}
+
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 62px);
+  gap: 6px;
+}
+
+.wiki-slot {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  aspect-ratio: 1;
+  background: url('/game/ui/ItemSlot_Bg.png') center / 100% 100% no-repeat;
+}
+
+.wiki-slot img {
+  width: 72%;
+  height: 72%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px rgba(0, 0, 0, 0.5));
+}
+
+.patch-banner {
+  margin-bottom: 4px;
+  background: linear-gradient(rgba(150, 23, 27, 0.26), transparent 54px), var(--sidebar-panel);
+  border: 2px solid #111;
+  box-shadow: 0 0 0 2px #4a4d51, 0 0 0 4px #151618, 0 12px rgba(0, 0, 0, 0.42);
+}
+
+.patch-titlebar {
+  height: 46px;
+  background: url('/game/ui/EquippedTextBg.png') center / 100% 100% no-repeat;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.55);
+}
+
+.patch-titlebar h2 {
+  margin: 0;
+  color: #ffd24a;
+  font: 18px/1 var(--display-font);
+  text-transform: none;
+  text-shadow: 1px 1px #5a1010;
+}
+
+.patch-body {
+  display: flex;
+  align-items: center;
+  gap: 13px 16px;
+  min-height: 70px;
+  padding: 15px 18px;
+}
+
+.patch-version {
+  display: grid;
+  place-items: center;
+  height: 40px;
+  padding: 0 14px;
+  color: #fcfcfc;
+  font: 15px/1.5 var(--dos-font);
+  background: #14161b url('/game/ui/ItemSlot_Bg.png') center / 100% 100% no-repeat;
+  border: 2px solid #fcfcfc;
+  box-shadow: 0 0 9px #fcfcfc;
+}
+
+.patch-body p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.patch-cta {
+  margin-left: auto;
+}
+
+.patch-cta img {
+  width: 18px;
+  height: 18px;
+}
+
+.home-section {
+  margin-top: 34px;
+}
+
+.home-section-head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 40px;
+  margin-bottom: 16px;
+}
+
+.home-section-head > span {
+  color: var(--gold);
+  font: 10px/1.4 var(--dos-font);
+  text-transform: uppercase;
+}
+
+.home-section-head h2 {
+  flex: 0 0 auto;
+  margin: 0;
+  color: #fff0c8;
+  font: 26px/1 var(--display-font);
+}
+
+.home-section-head i {
+  flex: 1;
+  height: 6px;
+  background: url('/game/ui/Arrange_DividedLine.png') center / auto 6px repeat-x;
+  opacity: 0.7;
+}
+
+.home-section-head > a {
+  color: var(--gold);
+  font: 11px/1.5 var(--dos-font);
+  text-transform: uppercase;
+}
+
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.community-card {
+  min-height: 146px;
+  padding: 14px;
+  color: var(--text);
+  background: linear-gradient(rgba(255, 255, 255, 0.03), transparent), #181b20;
+  border: 2px solid var(--line);
+}
+
+.community-card:hover,
+.category-card:hover,
+.number-tile:hover {
+  border-color: #5a442c;
+  filter: brightness(1.08);
+}
+
+.community-card-top {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.community-card-top img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.community-card-top b {
+  margin-left: auto;
+  color: #d2c9b5;
+  font-size: 11px;
+}
+
+.community-kind {
+  color: var(--gold);
+  font: 9px/1.4 var(--dos-font);
+}
+
+.community-card h3 {
+  margin: 14px 0 6px;
+  color: #fff3c4;
+  font: 14px/1.35 var(--dos-font);
+}
+
+.community-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.community-card small {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 1px 5px;
+  color: #9bd0f5;
+  font: 8px/1.4 var(--dos-font);
+  border: 1px solid #65aee0;
+}
+
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.number-tile {
+  display: grid;
+  place-items: center;
+  min-height: 66px;
+  padding: 8px;
+  text-align: center;
+  background: rgba(11, 12, 14, 0.72);
+  border: 1px solid #4a4e55;
+}
+
+.number-tile b,
+.number-tile span {
+  display: block;
+}
+
+.number-tile b {
+  color: var(--gold);
+  font: 18px/1.2 var(--dos-font);
+}
+
+.number-tile span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.category-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  min-height: 90px;
+  padding: 12px 14px;
+  color: var(--text);
+  background: #191c21;
+  border: 2px solid var(--line);
+  border-left: 5px solid #b52c31;
+}
+
+.category-card-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  background: #f4f4ec;
+  clip-path: polygon(29% 0, 71% 0, 100% 29%, 100% 71%, 71% 100%, 29% 100%, 0 71%, 0 29%);
+}
+
+.category-card-icon::before {
+  position: absolute;
+  inset: 4px;
+  content: '';
+  background: #0a0b0d;
+  clip-path: inherit;
+}
+
+.category-card-icon img {
+  position: relative;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.category-card-copy {
+  min-width: 0;
+}
+
+.category-card-copy strong {
+  color: #fff3c4;
+  font-size: 13px;
+}
+
+.category-card-copy em {
+  margin-left: 6px;
+  color: var(--faint);
+  font: normal 9px/1 var(--dos-font);
+}
+
+.category-card-copy em.badge-new {
+  color: var(--gold);
+}
+
+.category-card-copy small {
+  display: block;
+  margin-top: 6px;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.hero-roster {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.hero-card {
+  position: relative;
+  display: grid;
+  place-items: end center;
+  min-height: 185px;
+  overflow: hidden;
+  color: #fff3c4;
+  background:
+    linear-gradient(rgba(137, 22, 24, 0.28), transparent 72px),
+    url('/game/ui/BG_Hero_Decor.png') center / cover no-repeat,
+    #17191d;
+  border: 2px solid var(--line);
+}
+
+.hero-card img {
+  position: absolute;
+  inset: 8px 10px 28px;
+  width: calc(100% - 20px);
+  height: calc(100% - 36px);
+  object-fit: contain;
+  object-position: bottom center;
+}
+
+.hero-card strong {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 7px;
+  font: 13px/1 var(--dos-font);
+  text-align: center;
+  background: rgba(10, 11, 13, 0.84);
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 860px) {
+  .wiki-main-content {
+    padding: 18px 14px 24px;
+  }
+
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    min-height: 0;
+  }
+
+  .home-hero-copy {
+    padding: 22px 16px;
+  }
+
+  .home-hero-title {
+    font-size: 42px;
+  }
+
+  .home-hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .game-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .home-hero-visual {
+    padding: 0 0 22px;
+  }
+
+  .game-window {
+    width: calc(100% - 28px);
+    margin: 0 14px;
+  }
+
+  .game-window-body {
+    grid-template-columns: 120px minmax(0, 1fr);
+    min-height: 357px;
+  }
+
+  .patch-body {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .patch-body p {
+    flex: none;
+  }
+
+  .patch-cta {
+    flex: none;
+    margin-left: 0;
+  }
+
+  .community-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .numbers-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-grid,
+  .hero-roster {
+    grid-template-columns: 1fr;
+  }
+
+  .home-section-head {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+  }
+
+  .home-section-head i {
+    min-width: 60px;
+  }
+}
+
+@media (max-width: 430px) {
+  .home-hero-text {
+    max-width: none;
+  }
+
+  .hero-stat-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .game-window-body {
+    grid-template-columns: 112px minmax(0, 1fr);
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .inventory-grid {
+    gap: 4px;
+    grid-template-rows: repeat(2, 48px);
+  }
+
+  .category-card {
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 11px;
+    padding: 11px;
+  }
+
+  .category-card-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .category-card-icon img {
+    width: 35px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,32 @@
+:root {
+  --canvas: #111316;
+  --panel-deep: #14161b;
+  --panel: #1c1f27;
+  --panel-raised: #232733;
+  --panel-high: #2b3140;
+  --topbar-panel: #161719;
+  --sidebar-panel: #181a1d;
+  --hero-panel: #17191c;
+  --text: #e8eaf1;
+  --muted: #9aa1b5;
+  --faint: #646b80;
+  --tan: #c9b896;
+  --gold: #f6b73c;
+  --gold-deep: #c5871c;
+  --red: #8e1719;
+  --red-deep: #3b1012;
+  --line: #3e4248;
+  --line-raised: #555a61;
+  --line-dark: #111111;
+  --announcement-height: 38px;
+  --header-height: 52px;
+  --shell-max: 1460px;
+  --center-max: 1270px;
+  --desktop-sidebar: 252px;
+  --mobile-sidebar: 300px;
+  --desktop-content: 788px;
+  --shell-gap: 16px;
+  --display-font: 'OrangeKid', 'DOSVGA', monospace;
+  --dos-font: 'DOSVGA', 'Courier New', monospace;
+  --body-font: 'LatoWiki', Inter, system-ui, sans-serif;
+}
